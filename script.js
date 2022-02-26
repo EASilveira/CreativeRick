@@ -32,13 +32,13 @@ document.getElementById("charSubmit").addEventListener("click", function(event) 
               var res = json.results[i];
               document.getElementById("title").innerHTML = "Search Another!";
 
-              var charbox = document.createElement('div');
-              var charimg = document.createElement('div');
-              var chartext = document.createElement('div');
+              var charbox = document.getElementById('charbox');
+              var charimg = document.getElementById('charimg');
+              var chartext = document.getElementById('chartext');
 
-              charbox.id = 'charbox';
-              charimg.id = 'charimg';
-              chartext.id = 'chartext';
+              // charbox.id = 'charbox';
+              // charimg.id = 'charimg';
+              // chartext.id = 'chartext';
 
               charimg.innerHTML = '<img src="' + res.image + '"/>';
 
@@ -48,9 +48,9 @@ document.getElementById("charSubmit").addEventListener("click", function(event) 
               text += '<p><b>Last Seen: </b>' + res.location.name + '</p>';
               chartext.innerHTML = text;
 
-              charbox.appendChild(charimg);
-              charbox.appendChild(chartext);
-              document.body.appendChild(charbox);
+              // charbox.appendChild(charimg);
+              // charbox.appendChild(chartext);
+              // document.body.appendChild(charbox);
               break;
             }
           }

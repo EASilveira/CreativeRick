@@ -29,6 +29,13 @@ body {
   color: #fafd7cff;
 }
 
+#subTitle {
+  position: relative;
+  top: 25px;
+  font-size: 40px;
+  color: white;
+}
+
 .searchbar {
   position: relative;
   margin: 0 auto;
@@ -47,7 +54,7 @@ body {
   top: 350px;
   height: 200px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   max-width: 950px;
   z-index: -1;
 }
